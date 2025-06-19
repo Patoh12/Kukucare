@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuku Halisi Kenya | Premium Poultry Products & AI Farming Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #1a5c1a 0%, #2e8b57 50%, #3cb371 100%);
+        }
+        
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .ai-feature-card {
+            transition: all 0.3s ease;
+        }
+        
+        .ai-feature-card:hover {
+            transform: scale(1.03);
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .poultry-pattern {
+            background-image: radial-gradient(circle, #e8f5e9 2px, transparent 2px);
+            background-size: 20px 20px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <div class="h-10 w-10 rounded-full bg-green-600 flex items-center justify-center text-white font-bold text-xl">
+                            <i class="fas fa-egg"></i>
+                        </div>
+                        <span class="ml-3 text-xl font-bold text-gray-900">Kuku Halisi Kenya</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="text-green-600 px-3 py-2 rounded-md text-sm font-medium">Home</a>
+                        <a href="#products" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Products</a>
+                        <a href="#ai-farming" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">AI Farming</a>
+                        <a href="#farmers" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">For Farmers</a>
+                        <a href="#about" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">About Us</a>
+                        <a href="#contact" class="text-gray-700 hover:text-green-600 px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button class="mobile-menu-button p-2 rounded-md text-gray-700 hover:text-green-600 hover:bg-gray-100 focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div class="mobile-menu hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 rounded-md text-base font-medium text-green-600">Home</a>
+                <a href="#products" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600">Products</a>
+                <a href="#ai-farming" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600">AI Farming</a>
+                <a href="#farmers" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600">For Farmers</a>
+                <a href="#about" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600">About Us</a>
+                <a href="#contact" class="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-green-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20 md:py-32">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Premium Poultry Products & AI-Powered Farming Solutions</h1>
+                    <p class="text-xl mb-8">Kuku Halisi Kenya delivers high-quality chicken products while revolutionizing poultry farming through artificial intelligence.</p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#products" class="bg-white text-green-600 hover:bg-gray-100 px-8 py-3 rounded-lg font-semibold text-lg text-center transition duration-300">Our Products</a>
+                        <a href="#ai-farming" class="border-2 border-white text-white hover:bg-white hover:text-green-600 px-8 py-3 rounded-lg font-semibold text-lg text-center transition duration-300">AI Farming</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="https://images.unsplash.com/photo-1589927986089-35812388d1b4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Happy chicken farmer" class="rounded-lg shadow-2xl floating max-w-md w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-white py-16 poultry-pattern">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <div class="p-6 border-r border-gray-200">
+                    <div class="text-4xl font-bold text-green-600 mb-2">10,000+</div>
+                    <div class="text-gray-600">Happy Customers</div>
+                </div>
+                <div class="p-6 border-r border-gray-200">
+                    <div class="text-4xl font-bold text-green-600 mb-2">500+</div>
+                    <div class="text-gray-600">Partner Farmers</div>
+                </div>
+                <div class="p-6 border-r border-gray-200">
+                    <div class="text-4xl font-bold text-green-600 mb-2">98%</div>
+                    <div class="text-gray-600">Product Quality</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold text-green-600 mb-2">24/7</div>
+                    <div class="text-gray-600">AI Farming Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Our Premium Poultry Products</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Farm-fresh chicken products delivered with care and quality assurance.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="product-card bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-drumstick-bite text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Fresh Chicken</h3>
+                    <p class="text-gray-600 mb-4">Premium quality fresh chicken, humanely raised and processed under strict hygiene standards.</p>
+                    <div class="text-green-600 font-medium">
+                        <span class="text-sm">Starting from</span>
+                        <div class="text-2xl">KSh 450/kg</div>
+                    </div>
+                </div>
+                
+                <div class="product-card bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-egg text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Farm Eggs</h3>
+                    <p class="text-gray-600 mb-4">Nutrient-rich eggs from free-range chickens, packed with essential vitamins and minerals.</p>
+                    <div class="text-green-600 font-medium">
+                        <span class="text-sm">Starting from</span>
+                        <div class="text-2xl">KSh 15/egg</div>
+                    </div>
+                </div>
+                
+                <div class="product-card bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300">
+                    <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-utensils text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Processed Products</h3>
+                    <p class="text-gray-600 mb-4">Value-added products including sausages, nuggets, and marinated chicken portions.</p>
+                    <div class="text-green-600 font-medium">
+                        <span class="text-sm">Starting from</span>
+                        <div class="text-2xl">KSh 600/kg</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="#contact" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 transition duration-300">
+                    Order Now
+                    <i class="fas fa-shopping-cart ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Farming Section -->
+    <section id="ai-farming" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Revolutionizing Poultry Farming with AI</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Our cutting-edge AI solutions help farmers maximize productivity and animal welfare.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="ai-feature-card bg-green-50 p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-lg bg-green-600 flex items-center justify-center text-white text-2xl mr-6">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Smart Monitoring System</h3>
+                    </div>
+                    <p class="text-gray-600">Our AI-powered sensors monitor chicken health, feed consumption, and environmental conditions in real-time, alerting you to potential issues before they become problems.</p>
+                </div>
+                
+                <div class="ai-feature-card bg-green-50 p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-lg bg-green-600 flex items-center justify-center text-white text-2xl mr-6">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Predictive Analytics</h3>
+                    </div>
+                    <p class="text-gray-600">Advanced algorithms analyze historical and real-time data to predict growth rates, optimal harvest times, and potential disease outbreaks, maximizing your farm's efficiency.</p>
+                </div>
+                
+                <div class="ai-feature-card bg-green-50 p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-lg bg-green-600 flex items-center justify-center text-white text-2xl mr-6">
+                            <i class="fas fa-comment-medical"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Veterinary AI Assistant</h3>
+                    </div>
+                    <p class="text-gray-600">Our AI chatbot provides instant preliminary diagnosis of poultry health issues and recommends appropriate treatments, available 24/7 to all our partner farmers.</p>
+                </div>
+                
+                <div class="ai-feature-card bg-green-50 p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 rounded-lg bg-green-600 flex items-center justify-center text-white text-2xl mr-6">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900">Automated Feeding</h3>
+                    </div>
+                    <p class="text-gray-600">Smart feeding systems adjust portions based on chicken age, weight, and activity levels, reducing waste while ensuring optimal nutrition for your flock.</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 text-center">
+                <a href="#farmers" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 transition duration-300">
+                    Learn More for Farmers
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Farmers Section -->
+    <section id="farmers" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Partner With Kuku Halisi Kenya</h2>
+                    <p class="text-gray-600 mb-6">We empower small and medium poultry farmers across Kenya with our innovative partnership program that combines premium genetics, AI technology, and guaranteed market access.</p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">
+                                    <i class="fas fa-check text-green-600"></i>
+                                </div>
+                            </div>
+                            <p class="ml-3 text-gray-700">Receive high-quality day-old chicks and feed at competitive prices</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">
+                                    <i class="fas fa-check text-green-600"></i>
+                                </div>
+                            </div>
+                            <p class="ml-3 text-gray-700">Access to our AI farming platform at no additional cost</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">
+                                    <i class="fas fa-check text-green-600"></i>
+                                </div>
+                            </div>
+                            <p class="ml-3 text-gray-700">Guaranteed buy-back of your mature chickens at premium prices</p>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center">
+                                    <i class="fas fa-check text-green-600"></i>
+                                </div>
+                            </div>
+                            <p class="ml-3 text-gray-700">Regular training sessions on modern poultry farming techniques</p>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <a href="#contact" class="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-green-600 hover:bg-green-700 transition duration-300">
+                            Become a Partner Farmer
+                            <i class="fas fa-handshake ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-10">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-900 mb-6">Farmer Training Program</h3>
+                        <div class="space-y-6">
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="w-12 h-12 rounded-lg bg-green-100 flex items-center justify-center">
+                                        <i class="fas fa-graduation-cap text-green-600 text-xl"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-gray-900">Basic Poultry Farming</h4>
+                                    <p class="text-gray-600 mt-1">Essential skills for beginners including housing, feeding, and disease prevention.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="w-12 h-12 rounded-lg bg-green-100 flex items-center justify-center">
+                                        <i class="fas fa-laptop-code text-green-600 text-xl"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-gray-900">AI Technology Workshop</h4>
+                                    <p class="text-gray-600 mt-1">Hands-on training on using our smart farming platform effectively.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="w-12 h-12 rounded-lg bg-green-100 flex items-center justify-center">
+                                        <i class="fas fa-chart-pie text-green-600 text-xl"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-gray-900">Business Management</h4>
+                                    <p class="text-gray-600 mt-1">Financial planning, record keeping, and scaling your poultry business.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="w-12 h-12 rounded-lg bg-green-100 flex items-center justify-center">
+                                        <i class="fas fa-leaf text-green-600 text-xl"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-gray-900">Organic Practices</h4>
+                                    <p class="text-gray-600 mt-1">Sustainable and organic poultry farming methods for premium markets.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">What Our Customers & Farmers Say</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Hear from those who have experienced the Kuku Halisi difference.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Wanjiru M." class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Wanjiru M.</h4>
+                            <p class="text-green-600">Restaurant Owner, Nairobi</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"Kuku Halisi's chicken is consistently fresh and high quality. My customers can taste the difference, and it's become our signature ingredient."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Kamau K." class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Kamau K.</h4>
+                            <p class="text-green-600">Partner Farmer, Kiambu</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"The AI system alerted me to a temperature fluctuation in my coop before my chickens showed any signs of stress. This technology is revolutionary for small farmers like me."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Amina S." class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-900">Amina S.</h4>
+                            <p class="text-green-600">Home Chef, Mombasa</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic mb-6">"I switched to Kuku Halisi eggs for my family and noticed the richer taste and brighter yolks immediately. Now I won't buy from anywhere else."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">About Kuku Halisi Kenya</h2>
+                    <p class="text-gray-600 mb-6">Founded in 2015, Kuku Halisi Kenya began as a small family poultry farm with a vision to transform Kenya's poultry industry through innovation and quality.</p>
+                    <p class="text-gray-600 mb-6">Today, we're a leading integrated poultry company combining traditional farming values with cutting-edge technology to deliver premium products while empowering farmers nationwide.</p>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-md mb-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Our Mission</h3>
+                        <p class="text-gray-600">"To provide nutritious, high-quality poultry products to Kenyan families while revolutionizing poultry farming through technology and farmer empowerment."</p>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-xl shadow-md">
+                        <h3 class="text-xl font-bold text-gray-900 mb-4">Certifications</h3>
+                        <div class="flex flex-wrap gap-4">
+                            <div class="w-20 h-20 bg-white rounded-lg flex items-center justify-center p-2 shadow-sm border border-gray-200">
+                                <img src="https://via.placeholder.com/60x60?text=KEBS" alt="KEBS" class="max-w-full max-h-full">
+                            </div>
+                            <div class="w-20 h-20 bg-white rounded-lg flex items-center justify-center p-2 shadow-sm border border-gray-200">
+                                <img src="https://via.placeholder.com/60x60?text=HACCP" alt="HACCP" class="max-w-full max-h-full">
+                            </div>
+                            <div class="w-20 h-20 bg-white rounded-lg flex items-center justify-center p-2 shadow-sm border border-gray-200">
+                                <img src="https://via.placeholder.com/60x60?text=Organic" alt="Organic" class="max-w-full max-h-full">
+                            </div>
+                            <div class="w-20 h-20 bg-white rounded-lg flex items-center justify-center p-2 shadow-sm border border-gray-200">
+                                <img src="https://via.placeholder.com/60x60?text=AI+Cert" alt="AI Certified" class="max-w-full max-h-full">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-white p-8 rounded-xl shadow-lg">
+                        <h3 class="text-xl font-bold text-gray-900 mb-6">Our Technology Partners</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-center">
+                                <div class="w-16 h-16 rounded-lg bg-gray-100 flex items-center justify-center mr-6 overflow-hidden">
+                                    <img src="https://via.placeholder.com/60x60?text=Tech+1" alt="Tech Partner 1" class="max-w-full max-h-full">
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900">PoultryAI Solutions</h4>
+                                    <p class="text-gray-600 mt-1">Specialized AI for poultry health monitoring</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="w-16 h-16 rounded-lg bg-gray-100 flex items-center justify-center mr-6 overflow-hidden">
+                                    <img src="https://via.placeholder.com/60x60?text=Tech+2" alt="Tech Partner 2" class="max-w-full max-h-full">
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900">AgriTech Kenya</h4>
+                                    <p class="text-gray-600 mt-1">Farm automation and IoT solutions</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="w-16 h-16 rounded-lg bg-gray-100 flex items-center justify-center mr-6 overflow-hidden">
+                                    <img src="https://via.placeholder.com/60x60?text=Tech+3" alt="Tech Partner 3" class="max-w-full max-h-full">
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900">University of Nairobi</h4>
+                                    <p class="text-gray-600 mt-1">Agricultural research partnership</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center">
+                                <div class="w-16 h-16 rounded-lg bg-gray-100 flex items-center justify-center mr-6 overflow-hidden">
+                                    <img src="https://via.placeholder.com/60x60?text=Tech+4" alt="Tech Partner 4" class="max-w-full max-h-full">
+                                </div>
+                                <div>
+                                    <h4 class="text-lg font-semibold text-gray-900">Kenya Agricultural Institute</h4>
+                                    <p class="text-gray-600 mt-1">Farmer training programs</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Get In Touch</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">We're here to answer your questions about our products or farming partnerships.</p>
+            </div>
+            
+            <div class="md:flex">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-md h-full">
+                        <h3 class="text-xl font-bold text-gray-900 mb-6">Contact Information</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
+                                        <i class="fas fa-map-marker-alt text-green-600"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-gray-900">Head Office</h4>
+                                    <p class="text-gray-600 mt-1">Kuku Halisi Towers<br>Ngong Road, Nairobi, Kenya</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
+                                        <i class="fas fa-phone-alt text-green-600"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-gray-900">Phone</h4>
+                                    <p class="text-gray-600 mt-1">+254 700 987654 (Sales)<br>+254 720 123456 (Farmers)</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
+                                        <i class="fas fa-envelope text-green-600"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-gray-900">Email</h4>
+                                    <p class="text-gray-600 mt-1">sales@kukuhalisi.co.ke<br>farmers@kukuhalisi.co.ke</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex">
+                                <div class="flex-shrink-0">
+                                    <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
+                                        <i class="fas fa-clock text-green-600"></i>
+                                    </div>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="text-lg font-semibold text-gray-900">Working Hours</h4>
+                                    <p class="text-gray-600 mt-1">Monday - Friday: 8:00 AM - 5:00 PM<br>Saturday: 9:00 AM - 1:00 PM</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-8">
+                            <h4 class="text-lg font-semibold text-gray-900 mb-4">Visit Our Farm Shops</h4>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div class="bg-white p-3 rounded-lg shadow-sm">
+                                    <h5 class="font-medium text-gray-900">Nairobi CBD</h5>
+                                    <p class="text-sm text-gray-600">Kimathi Street, Kuku Halisi Shop</p>
+                                </div>
+                                <div class="bg-white p-3 rounded-lg shadow-sm">
+                                    <h5 class="font-medium text-gray-900">Thika</h5>
+                                    <p class="text-sm text-gray-600">Makongeni Market, Stall 12</p>
+                                </div>
+                                <div class="bg-white p-3 rounded-lg shadow-sm">
+                                    <h5 class="font-medium text-gray-900">Nakuru</h5>
+                                    <p class="text-sm text-gray-600">Kenyatta Avenue, Next to Nakumatt</p>
+                                </div>
+                                <div class="bg-white p-3 rounded-lg shadow-sm">
+                                    <h5 class="font-medium text-gray-900">Mombasa</h5>
+                                    <p class="text-sm text-gray-600">Nyali Centre, Ground Floor</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                        <h3 class="text-xl font-bold text-gray-900 mb-6">Send Us a Message</h3>
+                        <form>
+                            <div class="grid grid-cols-1 gap-6">
+                                <div>
+                                    <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
+                                    <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 transition duration-300" placeholder="Your name">
+                                </div>
+                                
+                                <div>
+                                    <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                                    <input type="email" id="email" class="w-full px-4 py-
+</html>
